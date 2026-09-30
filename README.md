@@ -1,89 +1,65 @@
-🎴 Flashcard Studio
-Turn a spreadsheet of words into printable, double-sided PDF flashcards — in seconds.
+cat > ~/README.md << 'ENDOFFILE'
+# 🎴 Flashcard Studio
 
-Built for language learners who want paper, not another screen.
+**Turn a spreadsheet of words into printable, double-sided PDF flashcards — in seconds.**
 
-Why this exists
-Digital flashcard apps are great — until you want to actually touch the cards, cut them out, and study without a phone in your hand.
+*Built for language learners who want paper, not another screen.*
+
+---
+
+## ✨ Why this exists
+
+Digital flashcard apps are great — until you want to actually **touch** the cards, cut them out, and study without a phone in your hand.
 
 Flashcard Studio takes a plain list of words and their translations and generates a print-ready, double-sided PDF. Front = word. Back = meaning. Cut along the lines. Start learning.
 
 No accounts. No cloud. No browser extensions. Just a Python script and a PDF.
 
-Screenshot
-https://screenshot.png/
+---
 
-Features
-Flexible input — Load .txt, .csv, or .xlsx files
+## 📸 Screenshot
 
-Custom mapping — Choose which column goes on the front, which on the back
+![Flashcard Studio screenshot](screenshot.png)
 
-Full-page grid — Set cards per row and per column
+---
 
-Independent font sizing — Front and back sizes tuned separately
+## 🚀 Features
 
-Live preview — Scroll to zoom, drag to pan, click a card to inspect
+- **Flexible input** — Load `.txt`, `.csv`, or `.xlsx` files
+- **Custom mapping** — Choose which column goes on the front, which on the back
+- **Full-page grid** — Set cards per row and per column
+- **Independent font sizing** — Front and back sizes tuned separately
+- **Live preview** — Scroll to zoom, drag to pan, click a card to inspect
+- **Print-ready output** — Clean PDF with mirrored backs for double-sided printing
+- **Unicode-native** — Chinese, Japanese, Korean, Vietnamese all render correctly
 
-Print-ready output — Clean PDF with mirrored backs for double-sided printing
+---
 
-Unicode-native — Chinese, Japanese, Korean, Vietnamese all render correctly
+## ⚡ How to use
 
-How to use
-Step 1 — Download
-Click the green Code button at the top of this page, then Download ZIP. Unzip the folder.
+### Step 1 — Download
 
-Step 2 — Launch
-Double-click run.sh.
+Click the green **Code** button at the top of this page → **Download ZIP**. Unzip the folder.
 
-First time: it asks for your password and installs everything automatically.
-Every time after: it just opens the app.
+### Step 2 — Launch
 
-Step 3 — Make flashcards
+Double-click **`run.sh`**.
 
-Click Browse and pick your list file.
+- First time: it asks for your password and installs everything automatically.
+- Every time after: it just opens the app.
 
-Choose which column is the front and which is the back.
+### Step 3 — Make flashcards
 
-Set how many cards per row and column.
+1. Click **Browse** and pick your list file.
+2. Choose which column is the front and which is the back.
+3. Set how many cards per row and column.
+4. Click **Generate PDF**.
+5. Print double-sided, cut along the lines, study.
 
-Click Generate PDF.
+---
 
-Print double-sided, cut along the lines, study.
+## 📄 Input file format
 
-Input file format
 Two columns — front word and back meaning. Extra columns are ignored.
 
-Tab-separated .txt file:
-
-一 yī
-二 èr
-三 sān
-
-Comma-separated .csv file:
-
-一,yī
-二,èr
-三,sān
-
-Excel .xlsx file: two columns, one row per card.
-
-Printing tips
-Print only the first page first — Double-sided, Flip on long edge.
-
-Cut one card out and flip it. The back should be behind the correct front.
-Correct: print the whole deck.
-Upside down: switch to Flip on short edge and reprint.
-
-Cut along the lines.
-
-Built with
-Python 3
-Tkinter
-ReportLab
-Pillow
-openpyxl
-
-License
-MIT — free to use, modify, and share. See LICENSE.
-
-Made with too much coffee and a genuine hatred of browser extensions. ☕
+Tab-separated `.txt` file:
