@@ -1,64 +1,89 @@
-# 🎴 Flashcard Studio
-
+🎴 Flashcard Studio
 Turn a spreadsheet of words into printable, double-sided PDF flashcards — in seconds.
 
 Built for language learners who want paper, not another screen.
 
----
-
-## ✨ Why this exists
-
+Why this exists
 Digital flashcard apps are great — until you want to actually touch the cards, cut them out, and study without a phone in your hand.
 
 Flashcard Studio takes a plain list of words and their translations and generates a print-ready, double-sided PDF. Front = word. Back = meaning. Cut along the lines. Start learning.
 
 No accounts. No cloud. No browser extensions. Just a Python script and a PDF.
 
----
+Screenshot
+https://screenshot.png/
 
-## 📸 Screenshot
+Features
+Flexible input — Load .txt, .csv, or .xlsx files
 
-![screenshot](screenshot.png)
+Custom mapping — Choose which column goes on the front, which on the back
 
----
+Full-page grid — Set cards per row and per column
 
-## 🚀 Features
+Independent font sizing — Front and back sizes tuned separately
 
-- **Flexible input** — Load `.txt`, `.csv`, or `.xlsx` files
-- **Custom mapping** — Choose which column goes on the front, which on the back
-- **Full-page grid** — Set cards per row / per column
-- **Independent font sizing** — Front and back sizes tuned separately
-- **Live preview** — Scroll to zoom, drag to pan, click a card to inspect
-- **Print-ready output** — Clean PDF with mirrored backs for double-sided printing
-- **Unicode-native** — Chinese, Japanese, Korean, Vietnamese all render correctly
+Live preview — Scroll to zoom, drag to pan, click a card to inspect
 
----
+Print-ready output — Clean PDF with mirrored backs for double-sided printing
 
-## ⚡ How to use
+Unicode-native — Chinese, Japanese, Korean, Vietnamese all render correctly
 
-### Step 1 — Download
+How to use
+Step 1 — Download
+Click the green Code button at the top of this page, then Download ZIP. Unzip the folder.
 
-Click the green **Code** button at the top of this page → **Download ZIP**. Unzip the folder.
+Step 2 — Launch
+Double-click run.sh.
 
-### Step 2 — Launch
+First time: it asks for your password and installs everything automatically.
+Every time after: it just opens the app.
 
-Double-click **`run.sh`**.
+Step 3 — Make flashcards
 
-- First time: it asks for your password and installs everything automatically.
-- Every time after: it just opens the app.
+Click Browse and pick your list file.
 
-### Step 3 — Make flashcards
+Choose which column is the front and which is the back.
 
-1. Click **Browse** and pick your list file.
-2. Choose which column is the front and which is the back.
-3. Set how many cards per row and column.
-4. Click **Generate PDF**.
-5. Print double-sided, cut along the lines, study.
+Set how many cards per row and column.
 
----
+Click Generate PDF.
 
-## 📄 Input file format
+Print double-sided, cut along the lines, study.
 
+Input file format
 Two columns — front word and back meaning. Extra columns are ignored.
 
-`.txt` (tab separated):
+Tab-separated .txt file:
+
+一 yī
+二 èr
+三 sān
+
+Comma-separated .csv file:
+
+一,yī
+二,èr
+三,sān
+
+Excel .xlsx file: two columns, one row per card.
+
+Printing tips
+Print only the first page first — Double-sided, Flip on long edge.
+
+Cut one card out and flip it. The back should be behind the correct front.
+Correct: print the whole deck.
+Upside down: switch to Flip on short edge and reprint.
+
+Cut along the lines.
+
+Built with
+Python 3
+Tkinter
+ReportLab
+Pillow
+openpyxl
+
+License
+MIT — free to use, modify, and share. See LICENSE.
+
+Made with too much coffee and a genuine hatred of browser extensions. ☕
