@@ -1,4 +1,3 @@
-cat > ~/README.md << 'ENDOFFILE'
 # 🎴 Flashcard Studio
 
 **Turn a spreadsheet of words into printable, double-sided PDF flashcards — in seconds.**
