@@ -62,3 +62,45 @@ Double-click **`run.sh`**.
 Two columns — front word and back meaning. Extra columns are ignored.
 
 Tab-separated `.txt` file:
+一 yī
+二 èr
+三 sān
+
+Comma-separated `.csv` file:
+一,yī
+二,èr
+三,sān
+
+Excel `.xlsx` file: two columns, one row per card.
+
+---
+
+## 🖨️ Printing tips
+
+1. Print only the first page first — **Double-sided**, **Flip on long edge**.
+2. Cut one card out and flip it. The back should be behind the correct front.
+   - ✅ Correct → print the whole deck.
+   - ❌ Upside down → switch to **Flip on short edge** and reprint.
+3. Cut along the lines.
+
+---
+
+## 🛠️ Built with
+
+- Python 3
+- Tkinter
+- ReportLab
+- Pillow
+- openpyxl
+
+---
+
+## 📜 License
+
+MIT — free to use, modify, and share. See [LICENSE](LICENSE).
+
+---
+
+
+
+
